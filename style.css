@@ -1,0 +1,19 @@
+
+@keyframes rocketMove {
+  0% {left:0px; top:0px;}
+  25% {left:1650px; top:0px; transform: rotate(135deg);}
+  50% {top: 850px; left: 1650px; transform: rotate(225deg);}
+  75% {left:0px; top:850px; transform: rotate(315deg);}
+  100% {top:0px; left:0px; transform: rotate(405deg);}
+}
+.rocketMove {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: rocketMove;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
