@@ -1,0 +1,121 @@
+body {
+  margin: 0px;
+}
+.window {
+  height: 800px;
+  width: 1100px;
+  position: relative;
+  background-color: #adadad;
+}
+.green{
+  width: 41%;
+  height:38%;
+  background-color: #94d15c;
+  position: absolute;
+}
+.topRight {
+top: 0px;
+right: 0px;
+}
+.topLeft {
+top: 0px;
+left: 0px;
+}
+.bottomRight {
+bottom: 0px;
+right: 0px;
+}
+.bottomLeft {
+  bottom: 0px;
+  left: 0px;
+}
+.bridge{
+  position: absolute;
+  top: 0px;
+  right: 550px;
+  transform: translateX(50%);
+  height: 800px;
+  width: 198px;
+  z-index: 1;
+  background-color: #adadad;
+  box-shadow: 30px 0px 12px rgba(128, 128, 128, 0.75);
+}
+.yellowLines {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  height: 800px;
+  width: 174px;
+  border-right: yellow solid 5px;
+  border-left: yellow solid 5px;
+  z-index: 1;
+}
+.whiteLine {
+  border-right: white dashed 5px;
+  position: absolute;
+  top: 0px;
+  height: 800px;
+  width: 87px;
+}
+.highway {
+  position: absolute;
+  top: 400px;
+  right: 550px;
+  transform: translate(50%,-50%);
+  height: 170px;
+  width: 1100px;
+  border-top: yellow solid 5px;
+  border-bottom: yellow solid 5px;
+  z-index: 0;
+}
+.vWhiteLine {
+  border-top: white dashed 5px;
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  width: 1100px;
+}
+.house1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 5px;
+}
+.whiteRight {
+  float: right;
+  background-color: red;
+  height: 800px;
+  width: 384px;
+  z-index: 10;
+}
+.whiteBottom {
+  clear: both;
+  background-color: blue;
+  width: 1150px;
+  height: 150px;
+  z-index: 10;
+}
+.fit {
+  width: 100%;
+  height: auto;
+}
+.car {
+  width: 150px;
+}
+
+@keyframes MoveDown {
+  0% {top:-114px; transform: rotateZ(270deg);}
+  100% {top:800px; transform: rotateZ(270deg);}
+}
+.car1{
+  position: absolute;
+  top: -114px;
+  left: 432px;
+  transform: rotateX(270);
+  z-index: 5;
+  animation-name: MoveDown;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
